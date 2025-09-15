@@ -1,0 +1,17 @@
+# Каталог зависимостей Composer
+vendor/
+
+# Lock-файл Composer (можно оставить, если хочешь)
+# composer.lock
+
+# Файлы логов
+*.log
+
+# SQLite база (если локальная)
+*.sqlite
+
+# Временные файлы и IDE
+*.bak
+*.tmp
+.idea/
+.DS_Store
