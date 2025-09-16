@@ -1,0 +1,24 @@
+{
+    "name": "eario13/tic-tac-toe",
+    "description": "Tic-tac-toe CLI game",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "wp-cli/php-cli-tools": "^0.11"
+    },
+    "bin": [
+        "bin/tic-tac-toe"
+    ],
+    "autoload": {
+    "files": [
+        "src/Controller.php",
+        "src/View.php"
+    ]
+    },
+    "authors": [
+        {
+            "name": "Eario13",
+            "email": "seregor2503@gmail.com"
+        }
+    ]
+}
