@@ -1,0 +1,23 @@
+{
+    "name": "eario13/tic-tac-toe",
+    "description": "Tic-tac-toe CLI game without database (Task03)",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "wp-cli/php-cli-tools": "^0.12.6"
+    },
+    "bin": [
+        "bin/tic-tac-toe"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Eario13\\TicTacToe\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eario13",
+            "email": "seregor2503@gmail.com"
+        }
+    ]
+}

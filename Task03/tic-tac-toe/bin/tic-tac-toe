@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Eario13\TicTacToe\CliApp;
+
+$app = new CliApp();
+$app->run();
