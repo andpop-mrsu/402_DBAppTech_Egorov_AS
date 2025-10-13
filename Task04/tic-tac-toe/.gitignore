@@ -1,0 +1,13 @@
+# Composer vendor directory
+/vendor/
+
+# PHP-specific files
+*.phar
+.php_cs.cache
+
+# Logs
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
