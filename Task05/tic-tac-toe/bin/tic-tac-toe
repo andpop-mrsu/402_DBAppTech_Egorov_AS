@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+$autoloadPaths = [
+    __DIR__ . '/../vendor/autoload.php', // Для standalone установки пакета
+    __DIR__ . '/../../../autoload.php', // Для установки пакета как зависимости в другом проекте
+];
+
+foreach ($autoloadPaths as $autoloadPath) {
+    if (file_exists($autoloadPath)) {
+        require_once $autoloadPath;
+        break;
+    }
+}
+
+if (!class_exists('Composer\Autoload\ClassLoader')) {
+    fwrite(STDERR, "Ошибка: Composer autoloader не найден. Пожалуйста, запустите 'composer install'." . PHP_EOL);
+    exit(1);
+}
+
+use Eario13\TicTacToe\CliApp;
+
+$app = new CliApp();
+$app->run();
